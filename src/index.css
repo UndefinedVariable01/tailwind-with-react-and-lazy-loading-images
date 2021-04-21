@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-gray-100;
+    }
+}
+
+@layer components {
+    .primary-line {
+        height: 2.2px;
+    }
+
+    .h-post-img {
+        height: 230px;
+    }
+
+    .h-card-img {
+        height: 400px;
+    }
+
+    .h-intro-first {
+        height: 300px;
+    }
+
+    .h-intro-second {
+        height: 450px;
+    }
+
+    .h-intro-third {
+        height: 350px;
+    }
+
+    .h-intro-last {
+        height: 420px;
+    }
+
+    @screen md {
+        .h-post-img {
+            height: 280px;
+        }
+
+        .h-intro-first {
+            height: 350px;
+        }
+
+        .h-intro-second {
+            height: 550px;
+        }
+
+        .h-intro-third {
+            height: 480px;
+        }
+
+        .h-intro-last {
+            height: 500px;
+        }
+    }
+
+    @screen xl {
+        .h-post-img {
+            height: 330px;
+        }
+
+        .h-card-img {
+            height: 500px;
+        }
+
+        .h-intro-first {
+            height: 430px;
+        }
+
+        .h-intro-second {
+            height: 700px;
+        }
+
+        .h-intro-third {
+            height: 550px;
+        }
+
+        .h-intro-last {
+            height: 620px;
+        }
+    }
+}
+
+@layer utilities {
+    .h-longer {
+        height: 330px;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .sub-title {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    .tracking-super-wide {
+        letter-spacing: 1rem;
+        margin-right: -1rem;
+    }
+
+    @screen md {
+        .h-longer {
+            height: 390px;
+        }
+
+        .main-title {
+            font-size: 5.9vw;
+            line-height: 7vw;
+        }
+
+        .sub-title {
+            font-size: 2.95vw;
+        }
+
+        .tracking-super-wide {
+            letter-spacing: 2.5vw;
+            margin-right: -2.5vw;
+        }
+    }
+
+    @screen xl {
+        .h-longer {
+            height: 430px;
+        }
+    }
+
+    @screen 2xl {
+        .main-title {
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+
+        .sub-title {
+            font-size: 2.5rem;
+        }
+
+        .tracking-super-wide {
+            letter-spacing: 2rem;
+            margin-right: -2rem;
+        }
+    }
+}
